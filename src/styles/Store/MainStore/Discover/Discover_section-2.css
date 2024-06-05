@@ -1,0 +1,475 @@
+.span_7{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .FE_container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .FE-content{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+
+                &:hover{
+                    filter: brightness(1.2);
+                }
+            }
+            .For_Exp-content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 20px;
+
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    opacity: .7;
+                    font-size: 16px;
+                }
+
+                .FE-link{
+                    a{
+                        width: auto;
+                        font-size: 22px;
+                        color: #f5f5f5;
+                        text-decoration-color: rgb(255, 255, 255, .16);
+
+                        &:hover{
+                            text-decoration-color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.span_8{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .GN-cont{
+        display: flex;
+        flex-direction: column;
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+
+            &:hover{
+                filter: brightness(1.2);
+            }
+        }
+        .Game_News-content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            gap: 20px;
+
+            h3{
+                font-size: 22px;
+            }
+            p{
+                opacity: .7;
+                font-size: 16px;
+            }
+            .GN-link{
+                a{
+                    width: auto;
+                    font-size: 22px;
+                    color: #f5f5f5;
+                    text-decoration-color: rgb(255, 255, 255, .16);
+
+                    &:hover{
+                        text-decoration-color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+}
+.span_9{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100%;
+
+    .top-list{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        border-right: 1px solid rgb(255, 255, 255, .16);
+
+        .top_cont{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+            height: 40px;
+
+            h2{
+                font-size: 22px;
+            }
+
+            a{
+                background: none;
+                padding: 5px 15px;
+                border: 1px solid white;
+                border-radius: 5px;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: rgb(255, 255, 255, .16);
+                }
+            }
+        }
+        .top-lgame{
+            .game-card{
+                padding: 16px 32px;
+                display: flex;
+                position: relative;
+                margin-bottom: 10px;
+                border-radius: 10px;
+
+                .span_9-add-game-to-wishlist{
+                    position: absolute;
+                    border-radius: 50%;
+                    background: black;
+                    color: white;
+                    top: 20px;
+                    left: 100px;
+                    border: 2px solid white;
+                    display: none;
+                    transition: .3ms ease-in-out;
+                    cursor: pointer;
+                }
+                .img-game{
+                    width: 96px;
+                    height: 128px;
+                    margin-right: 16px;
+                }
+                .game-info{
+                    align-content: center;
+                    width: 100%;
+
+                    h3 {
+                        height: 60px;
+                        width: 100%;
+                        font-size: 16px;
+                        margin: 10px 0;
+                        word-wrap: break-word;
+                        white-space: normal;
+                    }
+
+                    .prices {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        align-items: flex-start;
+
+                        .discount {
+                            margin-top: 5px;
+                            font-size: 13px;
+                            background-color: #0074E4;
+                            padding: 3px 8px;
+                            border-radius: 5px;
+                        }
+
+                        .discount-sale-container {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            width: 100%;
+
+
+                            .original-price {
+                                text-decoration: line-through;
+                                color: #888;
+                            }
+
+                            .sale-price {
+                                color: #333;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                &:hover{
+                    background: rgb(255, 255, 255, .16);
+
+                    .span_9-add-game-to-wishlist{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.span_10{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .span_10-container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .span_10-content{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .span_10-add-game-to-wishlist{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: none;
+                border-radius: 50%;
+                z-index: 2;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+
+                &:hover{
+                    filter: brightness(1.2);
+
+                    .span_10-add-game-to-wishlist{
+                        display: block;
+                    }
+                }
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    opacity: .7;
+                    font-size: 16px;
+                }
+                .span_10-link{
+                    a{
+                        width: auto;
+                        font-size: 22px;
+                        color: #f5f5f5;
+                        text-decoration-color: rgb(255, 255, 255, .16);
+
+                        &:hover{
+                            text-decoration-color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+                .price{
+                    opacity: 1;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+.span_11 {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .span_11-container{
+
+        .span_11-title-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2{
+                font-size: 18px;
+                align-content: center;
+            }
+
+            a{
+                text-decoration: none;
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 5px 15px;
+                color: white;
+
+                &:hover{
+                    background-color: rgb(255, 255, 255, .16);
+                }
+            }
+        }
+    }
+
+    .span_11-games-list {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        padding: 20px 0;
+        position: relative;
+
+        .game-card {
+            flex: 0 0 auto;
+            width: 18%;
+            margin-right: 30px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+
+            .img-game {
+                position: relative;
+                display: inline-block;
+
+                .span_11-add-game-to-wishlist{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    background: #000000;
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    display: none;
+                    transition: .3s ease-in-out ;
+                    cursor: pointer;
+                }
+
+                img{
+                    width: 100%;
+                    transition: filter 0.3s ease;
+                    height: auto;
+                }
+                &:hover{
+                    filter: brightness(1.2);
+                    .span_11-add-game-to-wishlist{
+                        display: block;
+                    }
+                }
+            }
+            &:hover{
+                .span_11-add-game-to-wishlist{
+                    display: block;
+                }
+            }
+            .game-info {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+
+                h3 {
+                    height: 60px;
+                    font-size: 16px;
+                    margin: 5px 0;
+                    word-wrap: break-word;
+                    white-space: normal;
+                }
+                .prices {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    align-items: flex-start;
+
+                    .discount {
+                        margin-top: 5px;
+                        font-size: 13px;
+                        background-color: #0074E4;
+                        padding: 3px 8px;
+                        border-radius: 5px;
+                    }
+
+                    .discount-sale-container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+
+                        .original-price {
+                            text-decoration: line-through;
+                            color: #888;
+                        }
+
+                        .sale-price {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.span_12{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .span_12-container{
+        margin: 50px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .span_12-content{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+
+                &:hover{
+                    filter: brightness(1.2);
+                }
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    opacity: .7;
+                    font-size: 16px;
+                }
+                .span_12-link{
+                    a{
+                        display: flex;
+                        width: auto;
+                        font-size: 22px;
+                        color: #f5f5f5;
+                        text-decoration-color: rgb(255, 255, 255, .16);
+
+                        &:hover{
+                            text-decoration-color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

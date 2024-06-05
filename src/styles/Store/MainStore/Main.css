@@ -1,0 +1,85 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+
+    .top-main {
+        position: sticky;
+        background: #121212;
+        top: 0;
+        height: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        z-index: 100;
+
+        .top-main-content{
+            margin: 0 auto;
+            display: flex;
+            width: 75%;
+            align-items: center;
+
+            .search{
+                position: relative;
+
+                .icon-search{
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translate(0, -50%);
+                }
+
+                .search-bar {
+                    background: rgb(32, 32, 32);
+                    height: 40px;
+                    padding: 0px 0px 0px 40px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    border-radius: 999px;
+
+                    &:focus{
+                        background: rgb(50, 50, 50);
+                    }
+                }
+            }
+        }
+        .nav-link {
+            text-decoration: none;
+            color: rgba(245, 245, 245, 0.5);
+            padding: .5rem 1rem;
+            margin: 0 .7rem;
+
+            &:hover {
+                color: rgba(245, 245, 245);
+            }
+            &.active {
+                font-weight: bold;
+                color: white;
+            }
+            &:active{
+                border: 1px solid white;
+            }
+        }
+        .show-menu-main{
+            color: #f5f5f5;
+            display: none;
+        }
+    }
+}
+
+/*Smartphones */
+@media only screen and (max-width: 736px) {
+
+}
+/*iPads */
+@media only screen and (max-width: 1024px) {
+
+}
+/*Desktops and laptops*/
+@media only screen and (min-width: 1024px) {
+
+}
