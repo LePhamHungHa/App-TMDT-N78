@@ -22,13 +22,20 @@
 .alert {
     background-color: #333;
     color: #f9c74f;
-    padding: 10px;
+    padding: 10px 40px;
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 16px;
     justify-content: center;
     align-items: center;
     display: inline-flex;
+}
+
+.alert h1 {
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .alert span {
@@ -694,3 +701,200 @@
     /*filter: brightness(150%);*/
     transform: scale(1.1);
 }
+
+/*========================= css mobile==================*/
+
+@media (max-width: 768px) {
+
+    .alert {
+        background-color: #333;
+        color: #f9c74f;
+        padding: 1px 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+
+    .alert h1 {
+        background-color: #333;
+        color: #f9c74f;
+        margin-bottom: 20px;
+        flex-direction: column;
+        border-radius: 5px;
+        font-size: 15px;
+        align-items: flex-start;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+
+    .alert a {
+        text-decoration: none;
+    }
+
+    .alert span {
+        display: none;
+    }
+
+  /*=========================== welcome ==================  */
+
+    .text-welcome {
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .text-welcome h1 {
+        font-size: 25px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+
+/*================================ server status ===========    */
+    .server-status {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+/*======================= Search ================    */
+    .search-container {
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 10px;
+        font-size: 20px;
+        left: 10px;
+        color: #aaa;
+    }
+
+    .search-input {
+        padding: 10px 30px 10px 35px;
+        width: calc(100% - 70px);
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+/*======================= Button find id =================    */
+    .categories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .category {
+        display: flex;
+        width: 100%;
+    }
+
+    .category-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .category-text, .category-icon {
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        color: snow;
+        border-radius: 20px;
+        background-color: #282c34;
+    }
+
+    .regional_game, .regional_accounts, .regional_enterprise {
+        padding: 20px;
+    }
+
+    .text_regional_game, .text_regional-accounts, .text_regional-enterprise {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+
+    /*================= Games css mobile ===============*/
+
+    .button_games_row1,
+    .button_games_row2,
+    .button_games_row3,
+    .button_games_row4 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .game-button,
+    .show_games {
+        width: calc(50% - 20px);
+        margin-bottom: 70px;
+        position: relative;
+    }
+
+    .game-button:nth-child(odd) {
+        width: calc(50% - 10px);
+    }
+
+    .game-button:nth-child(even) {
+        width: calc(50% - 10px);
+    }
+
+    .game-button:nth-child(1) {
+        width: 100%;
+    }
+
+    .game-button button {
+        width: 100%;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .game-text {
+        text-align: left;
+        margin-top: 10px;
+        font-weight: bold;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+    }
+
+    .show_games{
+        height: 300px;
+        width: 150px;
+        /*width: calc(50% - 20px);*/
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .fortnite_games {
+        width: 100%;
+    }
+
+
+    /*=================== Accounts ===================*/
+    .button_accounts_row1, .button_accounts_row2, .button_accounts_row3,
+    .button_enterprise_row1, .button_enterprise_row2, .button_enterprise_row3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+

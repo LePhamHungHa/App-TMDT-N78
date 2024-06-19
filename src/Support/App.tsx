@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Mid from './components/Mid';
 import Help from './components/Mid';
-import About from "./components/About";
+import About from './components/About';
+import MobileMenuToggle from './components/MobileMenuToggle';
+import './App.css';
 
 function App() {
     return (
+
         <Router>
             <div className="App">
-                <Header />
+                <Header/>
                 <Routes>
                     <Route path="/" element={<Mid />} />
                     <Route path="/faq" element={<FAQ />} />

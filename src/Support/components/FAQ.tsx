@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/FAQ..css';
+import '../Style/FAQ.css';
 
 const FAQ: React.FC = () => {
     const rows = [

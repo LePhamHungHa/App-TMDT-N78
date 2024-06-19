@@ -44,6 +44,7 @@ import postparty_games from "../img/postparty_games.jpg";
 
 const Mid = () => {
 
+
  // ========================================== Onclick categories =========================================
 
     const scrollToSection = ({sectionId}: { sectionId: any }) => {
@@ -71,14 +72,12 @@ const Mid = () => {
             <div className="regional_headermid">
                 <div className="background-container">
                     <div className="alert">
-                        <span>!</span> You are not currently logged in. Log in to your Epic Games account <a
-            href="https://www.epicgames.com/id/login?product
-Name=epic-games&lang=en_US&redirectUrl=https%3A%2F%2Fwww.epicgames.com%2Fhelp">here</a> to view, update, and submit requests for support.
-                    </div>
+                        <span>!</span>
+                        <h1>You are not currently logged in. Log in to your Epic Games account <a href="#">here</a> to view, update, and submit requests for support.</h1></div>
                     <div className="text-welcome">
                         <h1>Welcome to Epic Games Player Support</h1>
                         <a href="https://status.epicgames.com/" className="server-status">
-                            SERVER STATUS: <strong>ALL SYSTEMS OPERATIONAL</strong> <FaCircle className="icon-online"/>
+                            SERVER STATUS: <strong> ALL SYSTEMS OPERATIONAL</strong> <FaCircle className="icon-online"/>
                         </a>
                     </div>
                     <div className="search-container">
@@ -237,8 +236,8 @@ Name=epic-games&lang=en_US&redirectUrl=https%3A%2F%2Fwww.epicgames.com%2Fhelp">h
                         </div>
                     </div>
                 )}
-
             </div>
+
 
             {/*========================================== Accounts ====================================*/}
             <div className="regional_accounts" id="Accounts">

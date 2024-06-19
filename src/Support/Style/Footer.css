@@ -162,3 +162,24 @@
 
     }
 }
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .resources, .made-by-epic-games {
+        width: 100%;
+    }
+
+    .list-resources, .list-made-epic {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footerLinks {
+        width: calc(50% - 10px);
+    }
+
+
+}
