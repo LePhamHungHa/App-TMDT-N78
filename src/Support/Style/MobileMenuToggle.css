@@ -1,0 +1,36 @@
+/* MobileMenuToggle.css */
+.mobile-menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu-toggle {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Thay đổi màu nền menu */
+    border: 1px solid #ccc; /* Thay đổi border menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thay đổi đổ bóng menu */
+}
+
+.nav-links.mobile-open {
+    display: block;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px;
+    color: #333; /* Thay đổi màu chữ menu */
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0; /* Thay đổi màu nền hover menu */
+}
